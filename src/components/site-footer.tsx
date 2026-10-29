@@ -1,3 +1,4 @@
+import { CopyrightYear } from "@/components/copyright-year"
 import { profile } from "@/content/profile"
 
 const footerLinks = [
@@ -44,8 +45,8 @@ export function SiteFooter() {
       </div>
 
       <div className="mt-10 flex flex-col gap-2 border-t border-border pt-6 text-xs text-muted-foreground md:flex-row md:items-center md:justify-between">
-        <p suppressHydrationWarning>
-          © <span suppressHydrationWarning>{new Date().getFullYear()}</span> {profile.name}. All rights reserved.
+        <p>
+          © 2026 {profile.name}. All rights reserved.
         </p>
         <p>Built with Next.js & Tailwind CSS</p>
       </div>
