@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Oswald, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const oswald = Oswald({
+  variable: "--font-oswald",
   subsets: ["latin"],
 });
 
@@ -21,10 +21,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark scroll-smooth`}
+      className={`${oswald.variable} ${geistMono.variable} ${oswald.className} h-full antialiased dark scroll-smooth`}
     >
       <body className="min-h-full flex flex-col">
-        {/* Apply the stored theme before hydration to avoid a flash of the wrong theme. */}
         <script
           dangerouslySetInnerHTML={{
             __html:

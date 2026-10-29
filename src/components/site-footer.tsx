@@ -1,12 +1,12 @@
-import { CopyrightYear } from "@/components/copyright-year"
+// import { CopyrightYear } from "@/components/copyright-year"
 import { profile } from "@/content/profile"
 
 const footerLinks = [
   { label: "Projects", href: "#projects" },
-  { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
-  { label: "Travel Journal", href: "#travel-journal" },
-  { label: "Blog", href: "#blog" },
+  // { label: "Travel Journal", href: "#travel-journal" },
+  // { label: "Blog", href: "#blog" },
+  { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ]
 
@@ -16,9 +16,10 @@ export function SiteFooter() {
       <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
         <div className="max-w-sm">
           <p className="text-lg font-bold tracking-tight text-foreground">{profile.name}</p>
-          <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-            {profile.role} · Nuclear Engineer · Photographer — {profile.location}
-          </p>
+          {/* <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+            {profile.role} · Nuclear Engineer · Photographer  
+          </p> */}
+          <p>{profile.location}</p>
         </div>
 
         <nav aria-label="Footer" className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground">
@@ -40,14 +41,15 @@ export function SiteFooter() {
             >
               {social.label}
             </a>
+
+
           ))}
         </div>
+
       </div>
 
-      <div className="mt-10 flex flex-col gap-2 border-t border-border pt-6 text-xs text-muted-foreground md:flex-row md:items-center md:justify-between">
-        <p>
-          © 2026 {profile.name}. All rights reserved.
-        </p>
+      <div className="mt-10 flex flex-col items-center justify-center gap-2 border-t border-border pt-6 text-center text-xs text-muted-foreground">
+        <p>© 2026 {profile.name}. All rights reserved.</p>
         <p>Built with Next.js & Tailwind CSS</p>
       </div>
     </footer>

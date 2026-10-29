@@ -9,7 +9,7 @@ export function AchievementsSection() {
   }
 
   return (
-    <Section
+    <Section className="container mx-auto"
       id="achievements"
       kicker="Achievements & Certifications"
       title="Verified milestones"

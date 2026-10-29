@@ -13,7 +13,7 @@ type SectionProps = {
 
 export function Section({ id, kicker, title, description, headerExtra, children, className }: SectionProps) {
   return (
-    <section
+    <section 
       id={id}
       aria-labelledby={`${id}-title`}
       className={cn("scroll-mt-20 border-t border-border px-4 py-16 md:px-10 md:py-24", className)}

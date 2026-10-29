@@ -6,7 +6,7 @@ import { Section } from "./section"
 
 export function ContactSection() {
   return (
-    <Section
+    <Section className="container mx-auto"
       id="contact"
       kicker="Contact"
       title="Let's work together"

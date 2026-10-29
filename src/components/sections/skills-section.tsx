@@ -3,7 +3,7 @@ import { Section } from "./section"
 
 export function SkillsSection() {
   return (
-    <Section
+    <Section className="container mx-auto"
       id="skills"
       kicker="Technical Skills"
       title="Tools I work with"

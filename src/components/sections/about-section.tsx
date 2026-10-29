@@ -11,13 +11,13 @@ const facts = [
 
 export function AboutSection() {
   return (
-    <Section
+    <Section className="container mx-auto"
       id="about"
       kicker="About Me"
       title="From nuclear engineering to software"
       description="Hi — I'm Hasnat (Kamrul Hasnat Sumit). Here's the short version of where I've been and where I'm going."
     >
-      <div className="grid gap-10 lg:grid-cols-3 lg:gap-16">
+      <div className="grid gap-10 lg:grid-cols-3 lg:gap-16 container mx-auto">
         <div className="space-y-4 text-base leading-relaxed text-muted-foreground md:text-lg lg:col-span-2">
           <p>
             By day I work as a <strong className="font-semibold text-foreground">Documentation Engineer at the Rooppur Nuclear Power Plant</strong>{" "}

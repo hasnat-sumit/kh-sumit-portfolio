@@ -3,7 +3,7 @@ import { Section } from "./section"
 
 export function JourneySection() {
   return (
-    <Section
+    <Section className="container mx-auto"
       id="journey"
       kicker="Development Journey"
       title="Becoming a software engineer"

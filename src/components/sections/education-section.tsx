@@ -4,7 +4,7 @@ import { Section } from "./section"
 
 export function EducationSection() {
   return (
-    <Section
+    <Section className="container mx-auto"
       id="education"
       kicker="Education"
       title="Nuclear power plant engineering"
